@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhor Painel pra da full Capa no Free fire atualizado</title>
+    <meta name="description" content="O painel mais poderoso do Free Fire. Poder do Toji nas suas mãos. +10.000 players já dominaram o jogo!">
+
+    <!-- Open Graph / preview de link (WhatsApp, Instagram, Facebook etc.) -->
+    <!-- IMPORTANTE: troque "https://seu-dominio.com/" pela URL real do site quando publicar -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TOJI PANEL - XIT | O melhor xit para Free Fire 100% atualizado">
+    <meta property="og:description" content="O painel 100% anti-ban para Free Fire. xit para android e iphone.">
+    <meta property="og:image" content="img site/logo roxa.png">
+    <meta property="og:url" content="https://newsensi.github.io/Tojixiter/">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PAINEL XIT | O melhor painel para xita em AP">
+    <meta name="twitter:description" content="O painel mais poderoso do Free Fire. 100% Anti-Ban, 100% Anti-Blacklist. +10.000 players já xitar no free fire!">
+    <meta name="twitter:image" content="https://newsensi.github.io/Tojixiter/">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4101840533281960');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    <style>
+        :root {
+            --primary: #8b5cf6;
+            --primary-dark: #7c3aed;
+            --primary-glow: rgba(139, 92, 246, 0.5);
+            --primary-soft: rgba(139, 92, 246, 0.15);
+            --red: #ef4444;
+            --red-glow: rgba(239, 68, 68, 0.5);
+            --gold: #eab308;
+            --bg: #06060e;
+            --bg2: #0d0b18;
+            --surface: #110f1e;
+            --surface2: #1a1730;
+            --border: #2a2545;
+            --text-muted: #9ca3af;
+            --text-dim: #6b7280;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Rajdhani', 'Noto Sans JP', sans-serif;
+            background: var(--bg);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        #bg-canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .banner-verde, .sales-counter, .notifications,
+        .hero, .features, .testimonials, .packages,
+        .guarantee, .faq, footer, .sticky-cta {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ====== ANIMATIONS ====== */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes pulse-slow { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+        @keyframes pulse-scale { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        @keyframes bounce-subtle { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+        @keyframes glow-purple {
+            0%, 100% { box-shadow: 0 0 30px var(--primary-glow); }
+            50% { box-shadow: 0 0 70px var(--primary-glow), 0 0 120px rgba(139,92,246,0.3); }
+        }
+        @keyframes slide-in {
+            from { transform: translateX(-400px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes neon-purple {
+            0%, 100% {
+                box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+                border: 2px solid var(--primary);
+            }
+            50% {
+                box-shadow: 0 0 20px var(--primary), 0 0 45px var(--primary), 0 0 65px rgba(139,92,246,0.5);
+                border: 2px solid var(--primary-dark);
+            }
+        }
+        @keyframes neon-yellow {
+            0%, 100% {
+                box-shadow: 0 0 10px #eab308, 0 0 20px #eab308, 0 0 30px #eab308;
+                border: 2px solid #eab308;
+            }
+            50% {
+                box-shadow: 0 0 20px #f59e0b, 0 0 40px #f59e0b, 0 0 60px #f59e0b;
+                border: 2px solid #fbbf24;
+            }
+        }
+        @keyframes cursed-flicker {
+            0%, 95%, 100% { opacity: 1; }
+            96% { opacity: 0.4; }
+            97% { opacity: 1; }
+            98% { opacity: 0.2; }
+        }
+        @keyframes ink-drip {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 0% 100%; }
+        }
+
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-pulse-slow { animation: pulse-slow 20s ease-in-out infinite; }
+        .animate-pulse-scale { animation: pulse-scale 2s ease-in-out infinite; }
+        .animate-bounce-subtle { animation: bounce-subtle 3s infinite; }
+        .animate-glow { animation: glow-purple 2s infinite; }
+        .animate-neon-purple { animation: neon-purple 2s ease-in-out infinite; }
+        .animate-neon-yellow { animation: neon-yellow 2s ease-in-out infinite; }
+
+        /* ====== BANNER ====== */
+        .banner-verde {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            background: linear-gradient(to right, #4c1d95, #7c3aed, #6d28d9, #7c3aed, #4c1d95);
+            color: white;
+            text-align: center;
+            padding: 8px 12px;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 0.04em;
+            border-bottom: 1px solid rgba(139,92,246,0.4);
+            text-transform: uppercase;
+            line-height: 1.3;
+        }
+        .banner-verde .destaque {
+            color: #c4b5fd;
+            font-weight: 900;
+            text-shadow: 0 0 12px rgba(139,92,246,0.8);
+        }
+        @media (max-width: 480px) {
+            .banner-verde { padding: 6px 10px; font-size: 11px; letter-spacing: 0.02em; }
+        }
+
+        /* ====== SALES COUNTER ====== */
+        .sales-counter {
+            position: fixed;
+            top: 72px; right: 16px;
+            z-index: 999;
+            background: rgba(6,6,14,0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(139,92,246,0.3);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 9999px;
+            font-weight: bold;
+            font-size: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 20px rgba(139,92,246,0.15);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: grab;
+            user-select: none;
+        }
+        .sales-counter.dragging { cursor: grabbing; }
+        .sales-counter .fire-icon { color: var(--primary); width: 14px; height: 14px; }
+        .sales-counter .count { color: var(--primary); font-variant-numeric: tabular-nums; }
+
+        /* ====== NOTIFICATIONS ====== */
+        .notifications {
+            position: fixed;
+            bottom: 16px; left: 16px;
+            z-index: 999;
+            max-width: 320px;
+            pointer-events: none;
+        }
+        @keyframes notif-in {
+            from { transform: translateX(-120%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes notif-out {
+            from { transform: translateX(0); opacity: 1; max-height: 100px; margin-bottom: 8px; }
+            to { transform: translateX(-120%); opacity: 0; max-height: 0; margin-bottom: 0; }
+        }
+        .notification {
+            background: rgba(13,11,24,0.97);
+            border: 1px solid rgba(139,92,246,0.3);
+            border-left: 3px solid var(--primary);
+            border-radius: 12px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(139,92,246,0.08);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(12px);
+            animation: notif-in 0.45s cubic-bezier(0.22,1,0.36,1) forwards;
+            overflow: hidden;
+        }
+        .notification.removing { animation: notif-out 0.4s ease forwards; }
+
+        /* ====== NOTIFICAÇÃO ESTILO SIMPLES (alternativa mais enxuta) ====== */
+        .notification-simple {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(17,15,30,0.94);
+            border: 1px solid rgba(139,92,246,0.25);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e5e7eb;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+            animation: notif-in 0.4s ease forwards;
+            max-width: 300px;
+        }
+        .notification-simple.removing { animation: notif-out 0.35s ease forwards; }
+        .notification-simple .ns-emoji { font-size: 17px; flex-shrink: 0; }
+        .notification-simple b { color: var(--primary); font-weight: 800; }
+        .notification-simple .ns-time { color: var(--text-dim); font-weight: 600; font-size: 11px; white-space: nowrap; margin-left: auto; padding-left: 6px; }
+        .notif-avatar {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 15px;
+            color: #fff;
+            flex-shrink: 0;
+            text-transform: uppercase;
+        }
+        .notif-body { flex: 1; min-width: 0; }
+        .notif-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 2px;
+        }
+        .notif-name { font-weight: 700; font-size: 13px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .notif-time { font-size: 10px; color: #4b5563; flex-shrink: 0; white-space: nowrap; }
+        .notif-product { font-size: 12px; color: #d1d5db; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
+        .notif-footer { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #6b7280; }
+        .notif-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--primary);
+            flex-shrink: 0;
+            animation: pulse-scale 1.5s infinite;
+        }
+        .notif-badge {
+            display: inline-block;
+            background: rgba(139,92,246,0.15);
+            color: var(--primary);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 9999px;
+            border: 1px solid rgba(139,92,246,0.3);
+        }
+
+        /* ====== HERO ====== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 96px 16px 64px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, rgba(139,92,246,0.08), rgba(109,40,217,0.03), transparent);
+        }
+        /* Ink crack effect top */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 6px;
+            background: linear-gradient(to right, transparent, var(--primary), var(--red), var(--primary), transparent);
+            opacity: 0.7;
+            animation: cursed-flicker 4s ease-in-out infinite;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .logo-container { margin-bottom: 32px; position: relative; }
+        .logo {
+            width: 140px;
+            max-width: 90%;
+            height: auto;
+            margin: 0 auto;
+            filter: drop-shadow(0 0 24px rgba(139,92,246,0.6)) drop-shadow(0 25px 25px rgba(0,0,0,0.5));
+        }
+        .logo-kanji {
+            position: absolute;
+            top: -10px; right: calc(50% - 140px);
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: rgba(139,92,246,0.3);
+            line-height: 1;
+            pointer-events: none;
+        }
+        .logo-kanji-left {
+            left: calc(50% - 140px);
+            right: auto;
+            color: rgba(239,68,68,0.2);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.8rem, 11vw, 5.5rem);
+            font-weight: 400;
+            margin-bottom: 24px;
+            line-height: 1;
+            letter-spacing: 0.04em;
+        }
+        .text-neon {
+            display: inline-block;
+            color: var(--primary);
+            filter: drop-shadow(0 0 10px var(--primary)) drop-shadow(0 0 20px rgba(139,92,246,0.5));
+        }
+        .text-neon-red {
+            display: inline-block;
+            color: var(--red);
+            filter: drop-shadow(0 0 10px var(--red)) drop-shadow(0 0 20px rgba(239,68,68,0.4));
+        }
+
+        .benefits { font-size: 1.125rem; color: #d1d5db; margin-bottom: 32px; font-weight: 600; }
+        .benefits p { margin-bottom: 8px; }
+
+        .user-counter {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(139,92,246,0.1);
+            border: 2px solid var(--primary);
+            padding: 12px 24px;
+            border-radius: 9999px;
+            margin-bottom: 32px;
+            box-shadow: 0 0 20px rgba(139,92,246,0.2);
+        }
+
+        .video-placeholder {
+            max-width: 896px;
+            margin: 0 auto 32px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            transition: transform 0.5s;
+        }
+        .video-placeholder:hover { transform: scale(1.02); }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #7c3aed, #8b5cf6, #6d28d9);
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding: 20px 52px;
+            border-radius: 4px;
+            text-decoration: none;
+            box-shadow: 0 25px 50px -12px rgba(139,92,246,0.5), 0 0 40px rgba(139,92,246,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            letter-spacing: 0.12em;
+            clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+        .cta-button:hover { transform: scale(1.07); box-shadow: 0 30px 60px -12px rgba(139,92,246,0.6), 0 0 60px rgba(139,92,246,0.4); }
+        .cta-button:hover::before { left: 100%; }
+
+        /* ====== FEATURES ====== */
+        .features {
+            padding: 60px 16px 40px;
+            background: linear-gradient(to bottom, transparent, var(--bg2));
+        }
+        .features-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.2rem;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 48px;
+            color: white;
+        }
+        .features-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        .feature-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 40px 28px 36px;
+            transition: all 0.4s;
+            text-align: center;
+            clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+            position: relative;
+        }
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .feature-card:hover { border-color: var(--primary); transform: translateY(-8px); }
+        .feature-card:hover::after { opacity: 1; }
+        .feature-card--highlight {
+            border: 2px solid var(--primary);
+            background: #110e1f;
+            box-shadow: 0 0 32px rgba(139,92,246,0.15), inset 0 0 40px rgba(139,92,246,0.04);
+        }
+        .feature-card--highlight:hover { box-shadow: 0 0 48px rgba(139,92,246,0.3); }
+        .feature-icon {
+            width: 80px; height: 80px;
+            margin: 0 auto 28px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(139,92,246,0.4);
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+        }
+        .feature-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: white;
+        }
+        .feature-card p { color: var(--text-muted); text-align: center; line-height: 1.7; font-size: 0.95rem; }
+
+        /* ====== TESTIMONIALS ====== */
+        .testimonials { padding: 36px 16px 64px; }
+        .testimonials h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 0.06em;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .testimonials-subtitle { color: var(--text-muted); text-align: center; margin-bottom: 28px; font-size: 1.125rem; }
+
+        .carousel-wrapper { max-width: 480px; margin: 0 auto; position: relative; }
+        .carousel-track-container {
+            overflow: hidden;
+            border-radius: 4px;
+            border: 2px solid rgba(139,92,246,0.35);
+            box-shadow: 0 25px 50px -12px rgba(139,92,246,0.2);
+            background: var(--surface);
+            position: relative;
+            /* Altura fixa: todos os slides ficam no mesmo box no mobile */
+            height: min(78vw, 500px);
+        }
+        .carousel-track {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            will-change: transform;
+            transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+        }
+        .carousel-slide {
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            background: var(--surface);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary);
+            color: white;
+            width: 44px; height: 44px;
+            border-radius: 2px;
+            border: none;
+            font-size: 22px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+        }
+        .carousel-btn:hover { transform: translateY(-50%) scale(1.12); box-shadow: 0 6px 20px rgba(139,92,246,0.4); }
+        .carousel-btn.prev { left: -22px; }
+        .carousel-btn.next { right: -22px; }
+        @media (max-width: 540px) { .carousel-btn.prev { left: 4px; } .carousel-btn.next { right: 4px; } }
+
+        .carousel-dots { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin-top: 20px; }
+        .carousel-dot {
+            width: 10px; height: 10px;
+            border-radius: 2px;
+            background: var(--border);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            padding: 0;
+        }
+        .carousel-dot.active { background: var(--primary); width: 28px; }
+        .carousel-counter { text-align: center; margin-top: 12px; font-size: 13px; color: var(--text-dim); }
+        .carousel-counter span { color: var(--primary); font-weight: 700; }
+
+        .stats-card {
+            background: linear-gradient(135deg, #4c1d95, #7c3aed, #6d28d9);
+            border-radius: 4px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 32px;
+            clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+            box-shadow: 0 20px 40px rgba(139,92,246,0.3);
+        }
+        .stats-number { font-family: 'Bebas Neue', sans-serif; font-size: 4.5rem; font-weight: 400; color: white; margin-bottom: 8px; letter-spacing: 0.05em; }
+        .stats-text { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; font-weight: 400; color: white; letter-spacing: 0.08em; }
+        .stats-subtext { color: rgba(255,255,255,0.8); font-weight: 600; margin-top: 8px; }
+
+        /* ====== PACKAGES ====== */
+        .packages { padding: 80px 16px; }
+        .packages h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 0.06em;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .packages-subtitle { color: var(--text-muted); text-align: center; margin-bottom: 48px; font-size: 1.125rem; }
+
+        /* ====== TABELA COMPARATIVA ====== */
+        .compare-table-wrap { max-width: 900px; margin: 0 auto 48px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .compare-table { width: 100%; min-width: 560px; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+        .compare-table th, .compare-table td { padding: 12px 10px; text-align: center; font-size: 13px; border-bottom: 1px solid var(--border); }
+        .compare-table th { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.05em; background: var(--surface2); }
+        .compare-table td:first-child, .compare-table th:first-child { text-align: left; font-weight: 700; color: #d1d5db; padding-left: 16px; }
+        .compare-table th:nth-child(2) { color: var(--primary); }
+        .compare-table th:nth-child(3) { color: var(--primary); }
+        .compare-table th:nth-child(4) { color: var(--gold); }
+        .compare-table tr:last-child td { border-bottom: none; }
+        .compare-table .yes { color: #4ade80; font-size: 15px; }
+        .compare-table .no { color: var(--text-dim); font-size: 15px; }
+        .compare-table tbody tr:hover { background: rgba(139,92,246,0.05); }
+        .packages-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 32px; }
+
+        .package-card {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            padding: 32px;
+            transition: all 0.5s;
+            position: relative;
+            clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+        }
+        .package-card:hover { border-color: var(--primary); transform: translateY(-12px); box-shadow: 0 20px 60px rgba(139,92,246,0.2); }
+        .package-card.vip { border-color: var(--gold); }
+        .package-card.vip:hover { border-color: #fbbf24; box-shadow: 0 20px 60px rgba(234,179,8,0.2); }
+
+        .package-badge {
+            position: absolute;
+            top: -16px; left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to right, var(--gold), #f59e0b);
+            color: black;
+            padding: 8px 24px;
+            border-radius: 0;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+        }
+
+        .package-icon {
+            width: 96px; height: 96px;
+            margin: 0 auto 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(139,92,246,0.3);
+            clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+        }
+        .package-card.vip .package-icon {
+            background: linear-gradient(135deg, var(--gold), #f59e0b);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(234,179,8,0.3);
+        }
+
+        .package-title { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; font-weight: 400; letter-spacing: 0.08em; text-align: center; margin-bottom: 8px; color: var(--primary); }
+        .package-card.vip .package-title { color: var(--gold); }
+        .vip-callout {
+            background: linear-gradient(135deg, rgba(234,179,8,0.12), rgba(234,179,8,0.03));
+            border: 1px solid rgba(234,179,8,0.4);
+            border-radius: 4px;
+            padding: 16px 18px;
+            margin-bottom: 24px;
+        }
+        .vip-callout p.vip-callout-title {
+            font-family: 'Bebas Neue', sans-serif;
+            color: var(--gold);
+            font-size: 15px;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .vip-callout ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 10px; }
+        .vip-callout li { font-size: 12.5px; font-weight: 700; color: #fde68a; display: flex; align-items: center; gap: 5px; }
+        .package-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 24px; font-weight: 600; }
+        .package-features { list-style: none; margin-bottom: 32px; }
+        .package-features li { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; font-size: 14px; font-weight: 600; }
+        .package-features svg { flex-shrink: 0; margin-top: 4px; }
+
+        .package-pricing { text-align: center; margin-bottom: 24px; }
+        .package-old-price { color: var(--red); text-decoration: line-through; font-size: 1.25rem; font-weight: 700; }
+        .package-label { color: var(--text-muted); font-size: 14px; }
+        .package-price { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; font-weight: 400; color: var(--primary); letter-spacing: 0.05em; }
+        .package-card.vip .package-price { color: var(--gold); }
+
+        .package-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            padding: 18px;
+            border-radius: 2px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+        }
+        .package-button:hover { transform: scale(1.03); box-shadow: 0 10px 30px rgba(139,92,246,0.4); }
+        .package-card.vip .package-button { background: linear-gradient(135deg, #ca8a04, var(--gold)); color: black; }
+
+        /* ====== BOTÃO DE COMPRA ESTILO VÍDEO (verde, pílula, com brilho) ====== */
+        @keyframes glow-green-pulse {
+            0%, 100% { box-shadow: 0 8px 24px rgba(22,163,74,0.45), 0 0 24px rgba(74,222,128,0.35); }
+            50% { box-shadow: 0 10px 32px rgba(22,163,74,0.6), 0 0 42px rgba(74,222,128,0.55); }
+        }
+        @keyframes shine-sweep {
+            0% { left: -60%; }
+            55% { left: 130%; }
+            100% { left: 130%; }
+        }
+        .btn-comprar-verde {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #4ade80, #16a34a);
+            color: #fff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 19px;
+            letter-spacing: 0.08em;
+            padding: 18px;
+            border: none;
+            border-radius: 9999px;
+            cursor: pointer;
+            text-decoration: none;
+            animation: glow-green-pulse 2.2s ease-in-out infinite;
+            transition: transform 0.25s;
+        }
+        .btn-comprar-verde:hover { transform: scale(1.03); }
+        .btn-comprar-verde::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -60%;
+            width: 45%; height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.65), transparent);
+            transform: skewX(-20deg);
+            animation: shine-sweep 2.6s ease-in-out infinite;
+        }
+        /* Mesma forma/formato do botão verde, só muda a cor pra dourado (plano VIP) */
+        @keyframes glow-gold-pulse {
+            0%, 100% { box-shadow: 0 8px 24px rgba(202,138,4,0.45), 0 0 24px rgba(250,204,21,0.35); }
+            50% { box-shadow: 0 10px 32px rgba(202,138,4,0.6), 0 0 42px rgba(250,204,21,0.55); }
+        }
+        .btn-comprar-dourado {
+            background: linear-gradient(135deg, #facc15, #ca8a04);
+            color: #1a1204;
+            animation: glow-gold-pulse 2.2s ease-in-out infinite;
+        }
+        /* Variante pra uso solo (fora dos cards de pacote), como o CTA do topo */
+        .btn-comprar-verde--solo {
+            display: inline-flex;
+            width: auto;
+            padding: 20px 48px;
+            font-size: 1.5rem;
+            animation: glow-green-pulse 2.2s ease-in-out infinite, cta-bounce-subtle 2.6s ease-in-out infinite;
+        }
+        @keyframes cta-bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        /* ====== SELOS DE SEGURANÇA / MICROCOPY ====== */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            margin-top: 14px;
+            font-size: 11.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .trust-badges span { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+
+        /* ====== CONTADOR DE VENDAS DINÂMICO POR PRODUTO ====== */
+        .vendas-hoje-produto {
+            text-align: center;
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .vendas-hoje-produto .vendas-num {
+            color: #4ade80;
+            font-weight: 800;
+            font-variant-numeric: tabular-nums;
+        }
+        .package-card.vip .vendas-hoje-produto .vendas-num { color: var(--gold); }
+        .vendas-hoje-produto .vendas-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #4ade80;
+            flex-shrink: 0;
+            animation: pulse-scale 1.5s infinite;
+        }
+        .package-card.vip .vendas-hoje-produto .vendas-dot { background: var(--gold); }
+
+        /* ====== ÍCONES DE PAGAMENTO ====== */
+        .payment-icons { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; }
+        .pay-icon {
+            display: inline-flex; align-items: center; justify-content: center;
+            height: 22px; padding: 0 8px;
+            border-radius: 4px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: 0.02em;
+        }
+        .pay-icon.pix { background: #0d4d3c; color: #3ddc97; }
+        .pay-icon.visa { background: #1a1f6e; color: #fff; font-style: italic; }
+        .pay-icon.master { display: inline-flex; align-items: center; height: 22px; width: 32px; position: relative; background: #1c1c1c; border-radius: 4px; }
+        .pay-icon.master span:nth-child(1) { position: absolute; left: 6px; width: 14px; height: 14px; border-radius: 50%; background: #eb001b; }
+        .pay-icon.master span:nth-child(2) { position: absolute; left: 12px; width: 14px; height: 14px; border-radius: 50%; background: #f79e1b; mix-blend-mode: screen; }
+
+        /* ====== WHATSAPP FLUTUANTE ====== */
+       
+
+        /* ====== VER MAIS RECURSOS ====== */
+        .features-extra { list-style: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .features-extra.aberto { max-height: 1200px; }
+        .ver-mais-btn {
+            width: 100%;
+            background: none;
+            border: 1px dashed var(--border);
+            color: var(--primary);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: border-color 0.3s, background 0.3s;
+        }
+        .ver-mais-btn:hover { border-color: var(--primary); background: rgba(139,92,246,0.06); }
+        .package-card.vip .ver-mais-btn { color: var(--gold); }
+        .package-card.vip .ver-mais-btn:hover { border-color: var(--gold); background: rgba(234,179,8,0.06); }
+
+        /* ====== SISTEMA REVELAR OFERTA ====== */
+        .oferta-wrapper { margin-bottom: 24px; text-align: center; }
+        .texto-oferta-principal {
+            font-size: 0.92rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            color: #d1d5db;
+            font-weight: 600;
+        }
+        .preco-antigo { text-decoration: line-through; color: var(--red); font-weight: 700; }
+
+        .btn-revelar {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: #fff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.05rem;
+            letter-spacing: 0.08em;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(139,92,246,0.4);
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+            animation: pulse-scale 2s ease-in-out infinite;
+        }
+        .btn-revelar:hover { transform: scale(1.03); }
+        .btn-revelar.vip {
+            background: linear-gradient(135deg, #ca8a04, var(--gold));
+            color: #000;
+            box-shadow: 0 4px 20px rgba(234,179,8,0.4);
+        }
+
+        .oculto { display: none; opacity: 0; transition: opacity 0.5s ease-in-out; }
+        .visivel { display: block !important; opacity: 1; animation: surgir 0.4s ease-in-out; }
+
+        /* ====== PREÇO ESTILO IMAGEM (De X riscado / Por apenas / Valor grande, em roxo) ====== */
+        .preco-de {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.03em;
+            color: var(--red);
+            text-decoration: line-through;
+            margin-bottom: 4px;
+        }
+        .preco-por-apenas {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .preco-revelado {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.6rem;
+            font-weight: 400;
+            margin: 6px 0 6px 0;
+            letter-spacing: 0.03em;
+            background: linear-gradient(90deg, #c4b5fd, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .package-card.vip .preco-revelado {
+            background: linear-gradient(90deg, #ffde43, #ffb800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .preco-revelado span {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            -webkit-text-fill-color: #fff;
+        }
+        .texto-escassez {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        @keyframes surgir {
+            from { transform: translateY(-10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* ====== GUARANTEE ====== */
+        .guarantee { padding: 80px 16px; background: linear-gradient(to bottom, transparent, var(--bg2)); }
+        .guarantee-content { max-width: 896px; margin: 0 auto; text-align: center; }
+        .guarantee-badge {
+            width: 160px; height: 160px;
+            margin: 0 auto 32px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 25px 50px -12px rgba(139,92,246,0.5), 0 0 60px rgba(139,92,246,0.2);
+        }
+        .guarantee-badge-number { font-family: 'Bebas Neue', sans-serif; font-size: 4.5rem; font-weight: 400; color: white; letter-spacing: 0.02em; }
+        .guarantee-badge-text { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.9); }
+        .guarantee h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; font-weight: 400; letter-spacing: 0.06em; margin-bottom: 24px; }
+        .guarantee p { font-size: 1.125rem; color: #d1d5db; margin-bottom: 32px; line-height: 1.7; max-width: 672px; margin-left: auto; margin-right: auto; }
+        .guarantee-features { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; font-size: 14px; font-weight: 600; }
+        .guarantee-feature { display: flex; align-items: center; gap: 8px; }
+
+        /* ====== FAQ ====== */
+        .faq { padding: 80px 16px; }
+        .faq h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; font-weight: 400; letter-spacing: 0.06em; text-align: center; margin-bottom: 48px; }
+        .faq-container { max-width: 896px; margin: 0 auto; }
+        .faq-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+        }
+        .faq-item:hover { border-color: var(--primary); }
+        .faq-question {
+            width: 100%;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            background: none;
+            border: none;
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            letter-spacing: 0.03em;
+        }
+        .faq-question:hover { background: rgba(139,92,246,0.05); }
+        .faq-icon { color: var(--primary); transition: transform 0.3s; }
+        .faq-icon.open { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
+        .faq-answer.open { max-height: 500px; padding: 0 24px 20px; }
+        .faq-answer p { color: var(--text-muted); line-height: 1.625; font-weight: 500; }
+
+        /* ====== FOOTER ====== */
+        footer {
+            padding: 60px 16px 40px;
+            border-top: 1px solid rgba(139,92,246,0.2);
+            background: linear-gradient(to bottom, var(--bg), #020208);
+        }
+        .footer-content { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center; }
+        .footer-logo-wrap { display: flex; justify-content: center; }
+        .footer-logo {
+            width: 140px; max-width: 70%; height: auto;
+            filter: drop-shadow(0 0 16px rgba(139,92,246,0.4));
+        }
+        .footer-brand { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; letter-spacing: 0.15em; color: var(--primary); }
+
+        .footer-saiba-btn {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            padding: 14px 36px;
+            border-radius: 2px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(139,92,246,0.35);
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+        }
+        .footer-saiba-btn:hover { transform: scale(1.05); box-shadow: 0 6px 28px rgba(139,92,246,0.5); }
+        .footer-about { max-height: 0; overflow: hidden; transition: max-height 0.5s, opacity 0.4s; opacity: 0; max-width: 620px; }
+        .footer-about.open { max-height: 600px; opacity: 1; }
+        .footer-about p { color: var(--text-muted); font-size: 14px; line-height: 1.75; margin-bottom: 16px; text-align: center; }
+        .footer-copyright { color: var(--text-dim); font-size: 13px; }
+        .footer-insta {
+            width: 44px; height: 44px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .footer-insta:hover { background: var(--primary); border-color: var(--primary); }
+
+        /* ====== MISC ====== */
+        .icon { width: 24px; height: 24px; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+
+        .cta-social-proof { margin-top: 20px; display: inline-flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; font-size: 14px; color: rgba(229,231,235,0.92); font-weight: 600; }
+        .cta-social-proof .row { display: flex; align-items: center; gap: 10px; }
+
+        /* ====== STICKY CTA ====== */
+        .sticky-cta { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 9996; display: none; }
+        .sticky-cta.show { display: block; animation: sticky-slide-up 0.5s ease-out; }
+        @keyframes sticky-slide-up {
+            from { transform: translateX(-50%) translateY(100px); opacity: 0; }
+            to { transform: translateX(-50%) translateY(0); opacity: 1; }
+        }
+        .sticky-cta a {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            padding: 14px 24px;
+            border-radius: 2px;
+            text-decoration: none;
+            box-shadow: 0 25px 50px -12px rgba(139,92,246,0.5);
+            letter-spacing: 0.1em;
+            font-size: 15px;
+            clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 480px) { h1 { font-size: clamp(2.2rem, 12vw, 3rem); } }
+        @media (min-width: 768px) {
+            .logo { width: 160px; }
+            .features-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+            .packages-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* ====== BENEFÍCIOS / ANTES E DEPOIS / CONFIANÇA ====== */
+        .benefits-section { padding: 36px 16px 40px; background: linear-gradient(to bottom, var(--bg2), transparent); }
+        .benefits-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.8rem, 7vw, 2.4rem); font-weight: 400; letter-spacing: 0.05em; text-align: center; margin-bottom: 8px; padding: 0 8px; }
+        .benefits-tagline { text-align: center; color: var(--text-muted); font-size: 1.05rem; font-weight: 600; margin-bottom: 20px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+        /* Antes e Depois */
+        .antes-depois { max-width: 900px; margin: 0 auto 32px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .ad-card {
+            background: var(--surface);
+            border-radius: 4px;
+            padding: 28px 24px;
+            clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+        }
+        .ad-card.antes { border: 2px solid rgba(239,68,68,0.35); box-shadow: inset 0 0 40px rgba(239,68,68,0.05); }
+        .ad-card.depois { border: 2px solid rgba(139,92,246,0.5); box-shadow: inset 0 0 40px rgba(139,92,246,0.06), 0 0 32px rgba(139,92,246,0.15); }
+        .ad-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.08em; margin-bottom: 18px; text-align: center; }
+        .ad-card.antes h3 { color: var(--red); }
+        .ad-card.depois h3 { color: var(--primary); }
+        .ad-card ul { list-style: none; }
+        .ad-card li { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-weight: 600; font-size: 15px; }
+        .ad-card.antes li { color: #d1d5db; }
+        .ad-card.depois li { color: #fff; }
+
+        .aspiracional {
+            max-width: 720px; margin: 0 auto 56px; text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(1.4rem, 5vw, 2rem);
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: #fff;
+        }
+        .aspiracional span { display: inline-block; color: var(--primary); filter: drop-shadow(0 0 10px var(--primary)); }
+
+        /* Faixa de confiança */
+        .trust-strip { max-width: 1100px; margin: 8px auto 0; display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+        .trust-item {
+            display: flex; align-items: center; gap: 12px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 16px 18px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: border-color 0.3s, transform 0.3s;
+            clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+        }
+        .trust-item:hover { border-color: var(--primary); transform: translateY(-3px); }
+        .trust-item .emoji { font-size: 22px; flex-shrink: 0; }
+        @media (min-width: 700px) {
+            .antes-depois { grid-template-columns: 1fr 1fr; }
+            .trust-strip { grid-template-columns: repeat(4,1fr); }
+        }
+
+        /* Entrega/processo */
+        .entrega-strip {
+            max-width: 720px; margin: 24px auto 0;
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px;
+            font-size: 13.5px; color: var(--text-muted); font-weight: 600; text-align: center;
+        }
+        .entrega-strip span { display: inline-flex; align-items: center; gap: 6px; }
+
+        /* ====== DIVIDER ====== */
+        .section-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(139,92,246,0.3), rgba(239,68,68,0.2), rgba(139,92,246,0.3), transparent);
+            margin: 0;
+        }
+
+        /* Espaçamento mais compacto no mobile (que é o mais usado) — fica por último de propósito
+           pra garantir prioridade sobre as regras acima com a mesma especificidade */
+        @media (max-width: 600px) {
+            .features { padding: 40px 16px 24px; }
+            .benefits-section { padding: 20px 16px 24px; }
+            .benefits-tagline { margin-bottom: 14px; }
+            .antes-depois { margin-bottom: 20px; gap: 14px; }
+            .ad-card { padding: 20px 18px; }
+            .trust-strip { margin-top: 4px; gap: 10px; }
+            .entrega-strip { margin-top: 16px; }
+            .testimonials { padding: 20px 16px 40px; }
+            .testimonials h2 { margin-bottom: 6px; }
+            .testimonials-subtitle { margin-bottom: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="banner-roxo">
+    <p>Desconto só <span class="destaque">HOJE</span> nessa página <span class="destaque" id="data-display"></span></p>
+</div>
+
+<style>
+.banner-roxo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(to right, #4c1d95, #7c3aed, #6d28d9, #7c3aed, #4c1d95);
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    border-bottom: 1px solid rgba(139,92,246,0.4);
+}
+.banner-roxo .destaque {
+    color: #ffffff;
+    font-weight: 900;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+</style>
+
+<script>
+    // Atualiza a data e reagenda a troca automática à meia-noite
+    function atualizarDataBanner() {
+        const agora = new Date();
+        document.getElementById('data-display').textContent = agora.toLocaleDateString('pt-BR');
+
+        // calcula quanto falta para a próxima meia-noite e agenda a próxima atualização
+        const amanha = new Date(agora);
+        amanha.setHours(24, 0, 0, 0);
+        const msAteMeiaNoite = amanha - agora;
+        setTimeout(atualizarDataBanner, msAteMeiaNoite + 1000);
+    }
+    atualizarDataBanner();
+</script>
+
+    <!-- Sales Counter -->
+    <div class="sales-counter" id="sales-counter">
+        <svg class="fire-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+        </svg>
+        <span><span class="count" id="sales-count">489</span> Vendas Hoje!</span>
+    </div>
+
+    <!-- Notifications -->
+    <div class="notifications" id="notifications"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg animate-pulse-slow"></div>
+        <div class="hero-content">
+
+            <div class="logo-container animate-float">
+                <!-- 
+                    IMAGEM: coloque o arquivo "Jujutsu_kaisen_Toji.jfif" na mesma pasta do HTML 
+                    ou ajuste o caminho abaixo conforme necessário.
+                -->
+                <span class="logo-kanji logo-kanji-left">殺</span>
+                <img src="img site/logo roxa.png" alt="Toji Panel XIT Logo" class="logo">
+                <span class="logo-kanji">呪</span>
+            </div>
+
+            <h1>
+               o melhor <span class="text-neon">PAINEL XIT</span> PRA DAR
+                 <span class="text-neon-red">FULL VERMELHO!</span>
+            </h1>
+            
+ <div class="benefits">
+                <p>🤩 Painel com <strong style="color: var(--primary);">+10 mil Players</strong> Ativos!</p>
+                <p>🎯 Sua mira vai dar só <span style="color: var(--red); font-weight: 700;">Vermelho!</span> Painel XIT!</p>
+            </div>
+
+            <div class="user-counter animate-pulse-scale">
+                <svg class="icon" style="color: var(--primary);" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+                <span><strong style="color: var(--primary); font-size: 1.25rem;" id="user-count">1.978</strong> <span style="color: #d1d5db;">Players Ativos agora!</span></span>
+            </div>
+
+          <!-- Video -->
+            <div class="video-placeholder">
+            <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/uax6jfcqdx.js"
+    async type="module"></script><style>wistia-player[media-id='uax6jfcqdx']:not(:defined) { background: center / 
+    contain no-repeat url('https://fast.wistia.com/embed/medias/uax6jfcqdx/swatch'); display: block; filter: blur(5px); 
+        padding-top:56.25%; }</style> <wistia-player media-id="uax6jfcqdx" aspect="1.7777777777777777"></wistia-player>
+                    
+                </style>
+
+            </div>
+
+            <a href="#pacotes" class="btn-comprar-verde btn-comprar-verde--solo">
+                 QUERO MEU PAINEL XIT!
+            </a>
+
+            <div class="cta-social-proof">
+                <div class="row">
+                    <span>⭐</span>
+                    <span><strong>Avaliação:</strong> 4.9/5 estrelas (baseado em <strong>+5.000 avaliações</strong>)</span>
+                </div>
+                <div class="row">
+                    <span>🏆</span>
+                    <span><strong>Eleito</strong> o melhor painel XIT do Brasil por <strong>3 anos consecutivos</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Features -->
+    <section class="features">
+        <h2 class="features-title">Por que <span class="text-neon">+10 mil players</span> escolheram nosso painel?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
+                        <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+                    </svg>
+                </div>
+                <h3>AIMBOT LEGIT</h3>
+                <p>Mira que gruda na cabeça com suavidade natural. Seus amigos vão achar que você apenas treinou muito.</p>
+            </div>
+            <div class="feature-card feature-card--highlight">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0.5">
+                        <path d="M12 2C7.58 2 4 5.58 4 10v10l2.5-2 2.5 2 2.5-2 2.5 2 2.5-2 2.5 2V10c0-4.42-3.58-8-8-8z"/>
+                        <circle cx="9" cy="10" r="1.2" fill="#8b5cf6" stroke="none"/>
+                        <circle cx="15" cy="10" r="1.2" fill="#8b5cf6" stroke="none"/>
+                    </svg>
+                </div>
+                <h3>BYPASS ANTI-BAN</h3>
+                <p>Sistema de segurança de nível Máximo!. Jogue na sua conta principal sem medo de blacklists.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="44" height="44" viewBox="0 0 24 24" fill="white" stroke="none">
+                        <path d="M12 2c-1.1 0-2 .9-2 2v.28A5.98 5.98 0 007.5 6.5L6 5l-1 1 1.5 1.5A5.98 5.98 0 006 10H4v2h2c0 .68.1 1.34.28 1.95L5 15.28l1.28 1.28 1.28-1.28c.4.24.83.44 1.28.6L9 18v2h2v-2h2v2h2v-2l.16-1.12c.45-.16.88-.36 1.28-.6l1.28 1.28L19 15.28l-1.28-1.33c.18-.61.28-1.27.28-1.95h2v-2h-2c0-1.28-.44-2.46-1.18-3.4L18.5 5l-1-1-1.5 1.78A5.98 5.98 0 0014 4.28V4c0-1.1-.9-2-2-2zm0 6a3 3 0 110 6 3 3 0 010-6z"/>
+                    </svg>
+                </div>
+                <h3>SISTEMA STEALTH</h3>
+                <p>Sistema de disfarce indetectável. Jogue com segurança total, sem riscos de banimento ou blacklist.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Benefícios / Antes e Depois / Confiança -->
+    <section class="benefits-section">
+        <p class="benefits-tagline">Podíamos cobrar muito mais caro por isso 🤑 — mas preferimos manter um preço justo, abaixo do mercado, pra todo mundo poder xitar com qualidade. 🫡</p>
+
+        <div class="antes-depois">
+            <div class="ad-card antes">
+                <h3>❌ ANTES</h3>
+                <ul>
+                    <li>❌ Mira grudando no peito</li>
+                    <li>❌ Dano só amarelo</li>
+                    <li>❌ Sensibilidade travada, cheia de bug</li>
+                    <li>❌ Medo de tomar Ban ou Blacklist</li>
+                    <li>❌ Painel que promete e não entrega</li>
+                </ul>
+            </div>
+            <div class="ad-card depois">
+                <h3>✅ DEPOIS DO TOJI XIT</h3>
+                <ul>
+                    <li>🩸 Só vermelho, dano garantido</li>
+                    <li>🎯 Mira segura direto na cabeça</li>
+                    <li>⚡ Movimentação rápida e sensi leve, sem bugs</li>
+                    <li>🛡️ 100% Full capa, disfarçado e seguro</li>
+                    <li>📱 Funciona em Android e iPhone</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="trust-strip">
+            <div class="trust-item"><span class="emoji">✅</span><span>100% Anti-Ban</span></div>
+            <div class="trust-item"><span class="emoji">✅</span><span>100% Anti-BlackList</span></div>
+            <div class="trust-item"><span class="emoji">🔐</span><span>100% Seguro e Garantido</span></div>
+            <div class="trust-item"><span class="emoji">🥸</span><span>100% Disfarçado / Oculto</span></div>
+        </div>
+
+        <div class="entrega-strip">
+            <span>☠️ Não é auxílio, é painel de verdade — funciona</span>
+            <span>✅ Entrega garantida, sem enrolação</span>
+            <span>⚡ Chega na hora, direto no seu e-mail</span>
+            <span>💬 + suporte no WhatsApp com tutorial de instalação</span>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>O que os <span class="text-neon">players</span> estão dizendo</h2>
+        <p class="testimonials-subtitle">Prints e depoimentos reais de quem já testou o painel</p>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <video controls playsinline preload="metadata" poster="img site/depoimento-poster.jpg" style="width:100%;height:100%;object-fit:contain;background:#000;">
+                            <source src="img site/depoimento.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-slide"><img src="img site/prova01.jpg" alt="Depoimento de cliente 1" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="img site/prova02.jpg" alt="Depoimento de cliente 2" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="img site/prova03.jpg" alt="Depoimento de cliente 3" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="img site/prova04.jpg" alt="Depoimento de cliente 4" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Depoimento anterior">‹</button>
+            <button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Próximo depoimento">›</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <div class="carousel-counter"><span id="carouselCurrent">1</span> / <span id="carouselTotal">5</span> depoimentos</div>
+        </div>
+
+        <div style="max-width:480px; margin: 0 auto;">
+            <div class="stats-card">
+                <p class="stats-number">+10.000</p>
+                <p class="stats-text">Clientes Satisfeitos</p>
+                <p class="stats-subtext">E você será o próximo!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Packages -->
+    <section id="pacotes" class="packages">
+        <h2>Escolha Seu <span class="text-neon">PAINEL XIT</span> Abaixo</h2>
+        <p class="packages-subtitle">Todos os planos incluem suporte e garantia</p>
+        
+        </div>
+
+        <div class="packages-grid">
+
+            <!-- ANDROID -->
+            <div class="package-card">
+                <div class="package-icon" style="background:#110f1e; border:3px solid var(--primary); box-shadow:0 0 24px rgba(139,92,246,0.4); clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%); overflow:hidden;">
+                    <img src="img site/android.png" alt="Android" style="width:80%;height:80%;object-fit:contain;filter:drop-shadow(0 0 8px var(--primary));">
+                </div>
+                <h3 class="package-title">ANDROID</h3>
+                <p class="package-subtitle">O MELHOR PAINEL PARA SEU ANDROID!</p>
+                <ul class="package-features">
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" style="flex-shrink:0;margin-top:2px;"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg><span>PAINEL XIT FFH4X + BYPASS</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" style="flex-shrink:0;margin-top:2px;"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg><span>PROXY HS ALTO + HS PESCOÇO</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" style="flex-shrink:0;margin-top:2px;"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg><span>2x Automática Full Capa</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Rastreamento de cabeça</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>UMP AUTOMÁTICA</span></li>
+                    <ul class="package-features features-extra" id="extra-android">
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Aim Kill </span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Painel Fov + ESP</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Full HeadShot</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Sensi VIP Full capa</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Mira que grudar</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Função HeadTrick</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Jogue rank • CS • Salas • Ap</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Junto com disfarce pra não levar Ban!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>100% Anti-Ban é 100% Anti-Blacklist!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Nâo precisar de ROOT nem Shizuku!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Tutorial de Instalação super fácil</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Acesso ao Painel na Horas! no E-mail</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Suporte No ZAP 24 horas!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Garantia total de 7 dias!</span></li>
+                </ul>
+                <button class="ver-mais-btn" onclick="toggleExtra('android', this)">Ver mais recursos &#9662;</button>
+                <div class="oferta-wrapper">
+                    <p class="preco-de">De R$ 149,90</p>
+                    <p class="preco-por-apenas">Por apenas</p>
+                    <div class="preco-revelado">R$ 9,90</div>
+                    <a href="https://ggcheckout.app/checkout/v4/6h2AaJ1Pm256ijSFQay8" target="_blank" class="btn-comprar-verde">🛒 COMPRAR AGORA COM DESCONTO!</a>
+                    <div class="trust-badges">
+                        <span>🔒 Compra 100% segura</span>
+                        <span>⚡ Entrega imediata</span>
+                    </div>
+                    <div class="payment-icons">
+                        <span class="pay-icon pix">Pix</span>
+                        <span class="pay-icon visa">VISA</span>
+                        <span class="pay-icon master"><span></span><span></span></span>
+                    </div>
+                    <p class="vendas-hoje-produto"><span class="vendas-dot"></span><span class="vendas-num" id="vendas-android">0</span> pessoas compraram agora!</p>
+                </div>
+            </div>
+
+            <!-- IPHONE -->
+            <div class="package-card">
+                <div class="package-icon" style="background:#110f1e; border:3px solid var(--primary); box-shadow:0 0 24px rgba(139,92,246,0.4); clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%); overflow:hidden;">
+                    <img src="img site/iphone.png" alt="iPhone/iOS" style="width:80%;height:80%;object-fit:contain;filter:drop-shadow(0 0 8px var(--primary));">
+                </div>
+                <h3 class="package-title">IPHONE/IOS</h3>
+                <p class="package-subtitle">O MELHOR PAINEL PARA SEU IPHONE/IOS!</p>
+                <ul class="package-features">
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" style="flex-shrink:0;margin-top:2px;"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg><span>PAINEL XIT FFH4X + BYPASS</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" style="flex-shrink:0;margin-top:2px;"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg><span>PROXY HS ALTO + HS PESCOÇO</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" style="flex-shrink:0;margin-top:2px;"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg><span>2x Automática Full Capa</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Rastreamento de cabeça</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>UMP AUTOMÁTICA</span></li>
+                    <ul class="package-features features-extra" id="extra-iphone">
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Aim Kill </span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Painel Fov + ESP</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Full HeadShot</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Sensi VIP Full capa</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Mira que grudar</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Função HeadTrick</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Jogue rank • CS • Salas • Ap</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Junto com disfarce pra não levar Ban!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>100% Anti-Ban é 100% Anti-Blacklist!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Nâo precisar de PC (opcional)</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Tutorial de Instalação super fácil</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Acesso ao Painel na Horas! no E-mail</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Suporte No ZAP 24 horas!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Garantia total de 7 dias!</span></li>
+                </ul>
+                <button class="ver-mais-btn" onclick="toggleExtra('iphone', this)">Ver mais recursos &#9662;</button>
+                <div class="oferta-wrapper">
+                    <p class="preco-de">De R$ 149,90</p>
+                    <p class="preco-por-apenas">Por apenas</p>
+                    <div class="preco-revelado">R$ 9,90</div>
+                    <a href="https://ggcheckout.app/checkout/v4/2IvPVxU1JbX5naLV8mZb" target="_blank" class="btn-comprar-verde">🛒 COMPRAR AGORA COM DESCONTO!</a>
+                    <div class="trust-badges">
+                        <span>🔒 Compra 100% segura</span>
+                        <span>⚡ Entrega imediata</span>
+                    </div>
+                    <div class="payment-icons">
+                        <span class="pay-icon pix">Pix</span>
+                        <span class="pay-icon visa">VISA</span>
+                        <span class="pay-icon master"><span></span><span></span></span>
+                    </div>
+                    <p class="vendas-hoje-produto"><span class="vendas-dot"></span><span class="vendas-num" id="vendas-iphone">0</span> pessoas compraram agora!</p>
+                </div>
+            </div>
+
+            <!-- VIP CLT -->
+            <div class="package-card vip">
+                <div class="package-badge">👑 Mais Popular!</div>
+                <div class="package-icon" style="background:#110f1e; border:3px solid var(--gold); box-shadow:0 0 24px rgba(234,179,8,0.4); overflow:hidden; clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);">
+                    <img src="https://static.lumi.new/3b/3bdbda598f103923893f23e6a7d64a18.webp" alt="Painel CLT Premium" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <h3 class="package-title">PAINEL PRIME</h3>
+                <p class="package-subtitle" style="color:var(--gold);font-weight:700;">ACESSO VITALÍCIO + PAINEL CLT</p>
+                <div class="vip-callout">
+                    <p class="vip-callout-title">👑 BENEFÍCIOS DO PAINEL VIP</p>
+                    <ul>
+                        <li>✅ Mira 100% Full Capa</li>
+                        <li>✅ 2x Xitada Automática</li>
+                        <li>✅ Android • iOS</li>
+                        <li>✅ Painel CLT Premium</li>
+                        <li>✅ 100% Anti-Ban</li>
+                        <li>✅ 100% Anti-Blacklist</li>
+                    </ul>
+                    <p style="text-align:center;margin-top:10px;font-size:12.5px;color:var(--gold);font-weight:700;letter-spacing:0.04em;">☠️ Seja um jogador Prime</p>
+                </div>
+                <ul class="package-features">
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#eab308" style="flex-shrink:0;margin-top:2px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>PAINEL CLT Mod menu FFH4X + </span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#eab308" style="flex-shrink:0;margin-top:2px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>2x Xitada + 2x Automática</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#eab308" style="flex-shrink:0;margin-top:2px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>No Recoil (não espalhar tiros)</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#eab308" style="flex-shrink:0;margin-top:2px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>Rastreamento de cabeça avançado</span></li>
+                    <li><svg width="16" height="16" viewBox="0 0 24 24" fill="#eab308" style="flex-shrink:0;margin-top:2px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>UMP Automática Premium</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Função HS pescoço + Bypass</span></li>
+                <ul class="package-features features-extra" id="extra-vip">
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Aim Kill</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Painel Fov + ESP</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>2x Aim bot</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Full HeadShot</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Proxy VPN</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Mira que gruda!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Sensi VIP Full capa</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Jogue rank • CS • Salas • Ap</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Com disfarce pra não levar Ban!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Instalar sem precisar de PC (opcional)</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Nâo precisar de ROOT nem Shizuku!</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Tutorial de Instalação fácil e rápido)</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Acesso ao Painel na Horas! no E-mail</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Suporte VIP Exclusivo 24h/7</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Bônus Atualizações vitalícias</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Acesso antecipado de Atualizações</span></li>
+                    <li><svg class="icon" width="16" height="16" viewBox="0 0 24 24" style="stroke:#8b5cf6;flex-shrink:0;margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Garantia total de 30 Dias!</span></li>
+                </ul>
+                <button class="ver-mais-btn" onclick="toggleExtra('vip', this)">Ver mais recursos &#9662;</button>
+                <div class="oferta-wrapper">
+                    <p class="preco-de">De R$ 219,90</p>
+                    <p class="preco-por-apenas">Por apenas</p>
+                    <div class="preco-revelado">R$ 29,90</div>
+                    <a href="https://ggcheckout.app/checkout/v5/26wfLRhM3taBgtBvEJVe" target="_blank" class="btn-comprar-verde btn-comprar-dourado">🛒 COMPRAR AGORA COM DESCONTO!</a>
+                    <div class="trust-badges">
+                        <span>🔒 Compra 100% segura</span>
+                        <span>⚡ Entrega imediata</span>
+                        <span>🛡️ Garantia de 30 dias</span>
+                    </div>
+                    <div class="payment-icons">
+                        <span class="pay-icon pix">Pix</span>
+                        <span class="pay-icon visa">VISA</span>
+                        <span class="pay-icon master"><span></span><span></span></span>
+                    </div>
+                    <p class="vendas-hoje-produto"><span class="vendas-dot"></span><span class="vendas-num" id="vendas-vip">0</span> pessoas estão comprando agora!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="guarantee-content">
+            <div class="guarantee-badge" style="background:none;box-shadow:none;border:none;width:200px;height:200px;">
+                <img src="img site/garantia.webp" alt="Garantia" style="width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 24px rgba(139,92,246,0.5));">
+            </div>
+            <h2>Garantia <span class="text-neon">Total</span> de Satisfação</h2>
+            <p>Experimente o painel por 7 dias completos. Se por qualquer motivo você não ficar 100% satisfeito com os resultados, devolvemos seu dinheiro integralmente. Sem perguntas, sem burocracia.</p>
+            <div class="guarantee-features">
+                <div class="guarantee-feature">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" style="stroke:var(--primary);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Reembolso em até 24h</span>
+                </div>
+                <div class="guarantee-feature">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" style="stroke:var(--primary);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Sem perguntas</span>
+                </div>
+                <div class="guarantee-feature">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" style="stroke:var(--primary);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Compra 100% segura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <h2>Perguntas <span class="text-neon">Frequentes</span></h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(0)">
+                    <span>PAINEL XIT FUNCIONA PARA INICIANTES?</span>
+                    <svg class="icon faq-icon" id="faq-icon-0" width="24" height="24" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-0">
+                    <p>Sim! Qualquer pessoa pode instalar em minutos. Tutorial simples e sem complicações, funciona em Android ou iPhone/iOS.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(1)">
+                    <span>COMO RECEBO O PAINEL APÓS A COMPRA?</span>
+                    <svg class="icon faq-icon" id="faq-icon-1" width="24" height="24" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-1">
+                    <p>Entrega instantânea! Assim que o pagamento for aprovado, você recebe automaticamente todos os arquivos e instruções no seu email. Pagou, já pode começar a usar o seu XIT!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(2)">
+                    <span>A INSTALAÇÃO É COMPLICADA?</span>
+                    <svg class="icon faq-icon" id="faq-icon-2" width="24" height="24" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-2">
+                    <p><strong>Instalação super simples!</strong> O processo leva menos de 5 minutos. Incluímos tutorial em vídeo passo a passo e nossa equipe de suporte está disponível 24h para ajudar.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(3)">
+                    <span>É REALMENTE 100% ANTI-BAN?</span>
+                    <svg class="icon faq-icon" id="faq-icon-3" width="24" height="24" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-3">
+                    <p><strong>100% Anti-ban garantido!</strong> Nosso sistema é indetectável e já está sendo usado por mais de 10.000 players sem problemas. Caso aconteça algo, reembolsamos tudo!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(4)">
+                    <span>SE O FREE FIRE ATUALIZAR, O PAINEL PARA DE FUNCIONAR?</span>
+                    <svg class="icon faq-icon" id="faq-icon-4" width="24" height="24" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-4">
+                    <p>Nossa equipe atualiza o painel sempre que o Free Fire lança uma nova versão, geralmente no mesmo dia ou em poucas horas. Você recebe a atualização sem custo extra, direto pelo suporte no WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+   
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <a href="#pacotes">GARANTIR MEU PAINEL!</a>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-logo-wrap">
+                <!--
+                    IMAGEM: coloque "toji_pfp.jfif" na mesma pasta do HTML
+                -->
+                <img src="img site/logo roxa.png" alt="Toji Panel XIT" class="footer-logo" style="border:none;border-radius:0;">
+            </div>
+            <p class="footer-brand">TOJI XITER</p>
+
+            <button class="footer-saiba-btn" id="saibaMaisBtn" onclick="toggleSaibaMais()">
+                SAIBA MAIS SOBRE NÓS
+            </button>
+
+            <div class="footer-about" id="footerAbout">
+                <p>Sou um criador especializado em hacking e desenvolvimento de aplicativos voltados para jogos. Tenho experiência em criar ferramentas e soluções que otimizam a experiência de jogo, além de desenvolver aplicativos personalizados para melhorar a jogabilidade e a interação dos usuários. Meu foco é inovar e oferecer recursos que atendam às necessidades dos jogadores de Free Fire.</p>
+                <p>Nosso painel é para quem deseja ativar o recurso de xitar 100% full capa no Free Fire em qualquer dispositivo, com 100% de anti-ban e atualizado! Este novo painel utiliza códigos oficiais da Garena Free Fire, vazados dos arquivos da própria Garena. Utilizamos isso para criar um cheat 100% anti-ban e seguro para qualquer dispositivo.</p>
+            </div>
+
+            <p class="footer-copyright">© 2026 Toji Panel - XIT. Todos os direitos reservados.</p>
+
+            <a href="https://www.instagram.com/toji.xiter/" target="_blank" rel="noopener noreferrer" class="footer-insta" aria-label="Instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        // Date
+        // Contador regressivo curto (20 min), sincronizado pelo relógio: reinicia sozinho e sempre
+        // mostra menos de 20 minutos, gerando urgência real sem ficar horas e horas contando.
+        function updateCountdown() {
+            const cicloMs = 20 * 60 * 1000; // 20 minutos
+            const agora = Date.now();
+            const restante = cicloMs - (agora % cicloMs);
+            const m = String(Math.floor(restante / 60000)).padStart(2, '0');
+            const s = String(Math.floor((restante % 60000) / 1000)).padStart(2, '0');
+            const el = document.getElementById('countdown-timer');
+            if (el) el.textContent = `${m}:${s}`;
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // ====== PERSISTÊNCIA (localStorage) ======
+        // Guarda o valor junto com o dia. Se o dia mudou, os contadores reiniciam (é "vendas HOJE"),
+        // mas dentro do mesmo dia, um F5 na página NUNCA reseta o número pro valor original.
+        function getStoredCounter(key, valorPadrao) {
+            const hoje = new Date().toDateString();
+            try {
+                const raw = localStorage.getItem(key);
+                if (raw) {
+                    const obj = JSON.parse(raw);
+                    if (obj.dia === hoje) return obj.valor;
+                }
+            } catch (e) {}
+            return valorPadrao;
+        }
+        function setStoredCounter(key, valor) {
+            try { localStorage.setItem(key, JSON.stringify({ dia: new Date().toDateString(), valor })); } catch (e) {}
+        }
+
+        // Sales counter (persistente)
+        let salesCount = getStoredCounter('toji_salesCount', 489);
+        document.getElementById('sales-count').textContent = salesCount;
+        setStoredCounter('toji_salesCount', salesCount);
+        setInterval(() => {
+            salesCount += Math.floor(Math.random() * 3) + 1;
+            document.getElementById('sales-count').textContent = salesCount;
+            setStoredCounter('toji_salesCount', salesCount);
+        }, 15000);
+
+        // ====== CONTADOR DE VENDAS POR PRODUTO (dinâmico + persistente) ======
+        const vendasProdutoConfig = {
+            android: { min: 38, max: 62, key: 'toji_vendas_android' },
+            iphone: { min: 30, max: 52, key: 'toji_vendas_iphone' },
+            vip: { min: 14, max: 27, key: 'toji_vendas_vip' }
+        };
+        Object.keys(vendasProdutoConfig).forEach(pid => {
+            const cfg = vendasProdutoConfig[pid];
+            const valorInicial = Math.floor(Math.random() * (cfg.max - cfg.min + 1)) + cfg.min;
+            let valor = getStoredCounter(cfg.key, valorInicial);
+            const el = document.getElementById('vendas-' + pid);
+            if (el) el.textContent = valor;
+            setStoredCounter(cfg.key, valor);
+
+            function proximoIncremento() {
+                setTimeout(() => {
+                    valor += Math.floor(Math.random() * 3) + 1; // sobe de 1 a 3 por vez
+                    if (el) el.textContent = valor;
+                    setStoredCounter(cfg.key, valor);
+                    proximoIncremento();
+                }, Math.floor(Math.random() * 18000) + 12000); // entre 12s e 30s, sempre aleatório
+            }
+            proximoIncremento();
+        });
+
+        // Draggable sales counter
+        const salesCounter = document.getElementById('sales-counter');
+        let isDragging = false, offsetX = 0, offsetY = 0;
+        salesCounter.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - salesCounter.offsetLeft;
+            offsetY = e.clientY - salesCounter.offsetTop;
+            salesCounter.classList.add('dragging');
+            salesCounter.style.right = 'auto';
+        });
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) { salesCounter.style.left = (e.clientX - offsetX) + 'px'; salesCounter.style.top = (e.clientY - offsetY) + 'px'; }
+        });
+        document.addEventListener('mouseup', () => { isDragging = false; salesCounter.classList.remove('dragging'); });
+        salesCounter.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            const t = e.touches[0];
+            offsetX = t.clientX - salesCounter.offsetLeft;
+            offsetY = t.clientY - salesCounter.offsetTop;
+            salesCounter.style.right = 'auto';
+            e.preventDefault();
+        }, { passive: false });
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging) { const t = e.touches[0]; salesCounter.style.left = (t.clientX - offsetX) + 'px'; salesCounter.style.top = (t.clientY - offsetY) + 'px'; e.preventDefault(); }
+        }, { passive: false });
+        document.addEventListener('touchend', () => { isDragging = false; salesCounter.classList.remove('dragging'); });
+
+        // User counter (persistente)
+        let userCount = getStoredCounter('toji_userCount', 1978);
+        document.getElementById('user-count').textContent = userCount.toLocaleString('pt-BR');
+        setStoredCounter('toji_userCount', userCount);
+        setInterval(() => {
+            userCount += Math.floor(Math.random() * 8) + 3;
+            document.getElementById('user-count').textContent = userCount.toLocaleString('pt-BR');
+            setStoredCounter('toji_userCount', userCount);
+        }, 20000);
+
+        // ====== NOTIFICATIONS ======
+        const notifData = {
+            firstNames: ["João","Maria","Pedro","Ana","Carlos","Juliana","Rafael","Camila","Lucas","Fernanda","Matheus","Larissa","Gabriel","Beatriz","Felipe","Amanda","Bruno","Letícia","Diego","Aline","Thiago","Priscila","André","Natália","Rodrigo","Carolina","Eduardo","Vanessa","Gustavo","Bruna","Leonardo","Patrícia","Henrique","Débora","Vinícius","Renata","Marcelo","Jéssica","Leandro","Sabrina","Alexandre","Mônica","Daniel","Tâmara","Ricardo","Viviane","Fábio","Tatiane","Otávio","Kelly","Igor","Elaine","Wesley","Simone","Caio","Nathalia","Murilo","Gisele"],
+            lastNames: ["Silva","Santos","Oliveira","Souza","Lima","Costa","Pereira","Ferreira","Rodrigues","Almeida","Nascimento","Gomes","Martins","Araújo","Carvalho","Melo","Barbosa","Ribeiro","Rocha","Cardoso","Correia","Teixeira","Moura","Andrade","Cunha","Lopes","Monteiro","Freitas","Mendes","Cavalcante"],
+            products: [
+                { name: "Painel Toji Android", emoji: "⚔️", badge: "ANDROID", color: "#8b5cf6" },
+                { name: "Painel Toji iPhone/iOS", emoji: "🍎", badge: "iOS", color: "#8b5cf6" },
+                { name: "Painel CLT Premium", emoji: "👑", badge: "VIP", color: "#eab308" },
+            ],
+            cities: ["São Paulo, SP","Rio de Janeiro, RJ","Belo Horizonte, MG","Salvador, BA","Porto Alegre, RS","Curitiba, PR","Recife, PE","Fortaleza, CE","Manaus, AM","Belém, PA","Goiânia, GO","Florianópolis, SC","Campinas, SP","São Luís, MA","Maceió, AL","Natal, RN","Teresina, PI","Campo Grande, MS","João Pessoa, PB","Aracaju, SE","Macapá, AP","Porto Velho, RO","Palmas, TO","Vitória, ES","Ribeirão Preto, SP","Uberlândia, MG","Sorocaba, SP","Feira de Santana, BA","Joinville, SC","Londrina, PR","Niterói, RJ","Juiz de Fora, MG","Ananindeua, PA","Duque de Caxias, RJ","Contagem, MG","Santo André, SP"],
+            avatarColors: [["#7c3aed","#5b21b6"],["#eab308","#ca8a04"],["#3b82f6","#1d4ed8"],["#f97316","#c2410c"],["#a855f7","#7e22ce"],["#ec4899","#be185d"],["#06b6d4","#0e7490"],["#8b5cf6","#6d28d9"]],
+            timeAgo: ["agora mesmo","há 1 min","há 2 min","há 3 min","há 4 min","há 5 min"]
+        };
+        function getRand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+        function getInitials(f, l) { return (f[0] + l[0]).toUpperCase(); }
+        function maskName(f, l) { return f + ' ' + l[0] + l.slice(1).replace(/[a-zA-ZÀ-ú]/g, '*'); }
+        let ultimoNomeNotif = '';
+        function showNotification() {
+            let fn, ln;
+            do { fn = getRand(notifData.firstNames); ln = getRand(notifData.lastNames); }
+            while (fn + ln === ultimoNomeNotif); // evita repetir a mesma pessoa duas vezes seguidas
+            ultimoNomeNotif = fn + ln;
+            const product = getRand(notifData.products), city = getRand(notifData.cities);
+            const timeAgo = getRand(notifData.timeAgo);
+            const n = document.createElement('div');
+            n.className = 'notification-simple';
+            n.innerHTML = `
+                <span class="ns-emoji">${product.emoji}</span>
+                <span><b>${maskName(fn,ln)}</b> (${city}) comprou o ${product.name}</span>
+                <span class="ns-time">${timeAgo}</span>`;
+            document.getElementById('notifications').appendChild(n);
+            setTimeout(() => { n.classList.add('removing'); setTimeout(() => n.remove(), 400); }, 5500);
+        }
+
+        // Não mostra notificação enquanto a seção de pacotes (onde ficam os botões de compra)
+        // estiver visível na tela, pra não atrapalhar a decisão de compra do cliente.
+        let pacotesVisiveis = false;
+        const pacotesEl = document.getElementById('pacotes');
+        if (pacotesEl && 'IntersectionObserver' in window) {
+            new IntersectionObserver(entries => { pacotesVisiveis = entries[0].isIntersecting; }, { threshold: 0.2 }).observe(pacotesEl);
+        }
+
+        // Intervalo mais frequente e aleatório (entre 6s e 16s) pra reforçar prova social sem ficar robótico
+        function proximoIntervalo() { return Math.floor(Math.random() * 10000) + 6000; }
+
+        function scheduleNext() {
+            setTimeout(() => {
+                if (!pacotesVisiveis) showNotification();
+                scheduleNext();
+            }, proximoIntervalo());
+        }
+        // Primeira notificação aparece rápido (2 a 5s) pra já gerar prova social assim que a página carrega
+        setTimeout(() => { if (!pacotesVisiveis) showNotification(); scheduleNext(); }, Math.floor(Math.random() * 3000) + 2000);
+
+        // ====== CAROUSEL ======
+        const TOTAL_SLIDES = 5;
+        let currentSlide = 0, autoplayTimer = null;
+        const track = document.getElementById('carouselTrack');
+        const dotsContainer = document.getElementById('carouselDots');
+        const currentEl = document.getElementById('carouselCurrent');
+        const trackContainer = document.querySelector('.carousel-track-container');
+
+        // Gera os dots
+        for (let i = 0; i < TOTAL_SLIDES; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', `Feedback ${i + 1}`);
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        // Usa pixels em vez de % para evitar bug no mobile
+        // (% no translateX é relativo ao próprio elemento, não ao container)
+        function getSlideWidth() {
+            return trackContainer.offsetWidth;
+        }
+
+        function goToSlide(index) {
+            currentSlide = (index + TOTAL_SLIDES) % TOTAL_SLIDES;
+            const px = currentSlide * getSlideWidth();
+            track.style.transform = `translateX(-${px}px)`;
+            currentEl.textContent = currentSlide + 1;
+            document.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+            resetAutoplay();
+        }
+
+        // Recalcula posição ao redimensionar (rotação de tela no mobile)
+        window.addEventListener('resize', () => {
+            track.style.transition = 'none';
+            const px = currentSlide * getSlideWidth();
+            track.style.transform = `translateX(-${px}px)`;
+            requestAnimationFrame(() => { track.style.transition = ''; });
+        });
+
+        function moveCarousel(dir) { goToSlide(currentSlide + dir); }
+        function startAutoplay() { autoplayTimer = setInterval(() => goToSlide(currentSlide + 1), 4000); }
+        function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
+        startAutoplay();
+
+        // Pausa o autoplay enquanto o vídeo de depoimento estiver tocando
+        const depoimentoVideo = trackContainer.querySelector('video');
+        if (depoimentoVideo) {
+            depoimentoVideo.addEventListener('play', () => clearInterval(autoplayTimer));
+            depoimentoVideo.addEventListener('pause', () => startAutoplay());
+            depoimentoVideo.addEventListener('ended', () => startAutoplay());
+        }
+
+        // Touch swipe
+        let touchStartX = 0, touchStartY = 0, isSwiping = false;
+        trackContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            isSwiping = false;
+        }, { passive: true });
+        trackContainer.addEventListener('touchmove', (e) => {
+            const dx = Math.abs(e.touches[0].clientX - touchStartX);
+            const dy = Math.abs(e.touches[0].clientY - touchStartY);
+            if (dx > dy) isSwiping = true; // swipe horizontal detectado
+        }, { passive: true });
+        trackContainer.addEventListener('touchend', (e) => {
+            if (!isSwiping) return;
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40) moveCarousel(diff > 0 ? 1 : -1);
+        }, { passive: true });
+
+        // Saiba Mais
+        function toggleSaibaMais() {
+            const about = document.getElementById('footerAbout');
+            const btn = document.getElementById('saibaMaisBtn');
+            const isOpen = about.classList.toggle('open');
+            btn.textContent = isOpen ? 'FECHAR ▲' : 'SAIBA MAIS SOBRE NÓS';
+        }
+
+        // Ver mais recursos
+        function toggleExtra(id, btn) {
+            const el = document.getElementById('extra-' + id);
+            const aberto = el.classList.toggle('aberto');
+            btn.textContent = aberto ? 'Ver menos recursos ▴' : 'Ver mais recursos ▾';
+        }
+
+        // FAQ
+        function toggleFaq(index) {
+            document.getElementById(`faq-answer-${index}`).classList.toggle('open');
+            document.getElementById(`faq-icon-${index}`).classList.toggle('open');
+        }
+
+        // Sticky CTA
+        const stickyCta = document.getElementById('sticky-cta');
+        const faqEl = document.getElementById('faq');
+        const footerEl = document.getElementById('footer');
+        if (stickyCta && 'IntersectionObserver' in window) {
+            let faqVisible = false, footerVisible = false;
+            function updateStickyCta() { stickyCta.classList.toggle('show', faqVisible && !footerVisible); }
+            if (faqEl) { new IntersectionObserver(e => { faqVisible = e[0].isIntersecting; updateStickyCta(); }, { threshold: 0.35 }).observe(faqEl); }
+            if (footerEl) { new IntersectionObserver(e => { footerVisible = e[0].isIntersecting; updateStickyCta(); }, { threshold: 0.01 }).observe(footerEl); }
+        }
+    </script>
+
+    <!-- ====== FUNDO ANIMADO ======
+         Fundo futurista/3D: grid de perspectiva estilo "synthwave" + partículas com profundidade
+         conectadas por linhas, e um brilho de horizonte. Ainda com vinheta protegendo o centro
+         (textos/botões) pra não atrapalhar a leitura.
+    -->
+    <script>
+    (function() {
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let W, H, t = 0;
+
+        function resize() {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+        }
+
+        // ------ Partículas com profundidade (efeito 3D de paralaxe) ------
+        const NODE_COUNT = 55;
+        let nodes = [];
+        function randRange(a, b) { return a + Math.random() * (b - a); }
+        function createNodes() {
+            nodes = Array.from({ length: NODE_COUNT }, () => ({
+                x: randRange(0, W), y: randRange(0, H * 0.55), z: randRange(60, 500),
+                vx: randRange(-0.12, 0.12), vy: randRange(-0.06, 0.06), vz: randRange(-0.3, 0.3),
+                r: randRange(1, 2.2)
+            }));
+        }
+        function project(n) {
+            const fov = 320, scale = fov / (fov + n.z);
+            return { sx: n.x * scale + W * (1 - scale) / 2, sy: n.y * scale + H * (1 - scale) / 2, scale };
+        }
+        const MAX_DIST = 130;
+        function drawNodes() {
+            nodes.forEach(n => {
+                n.x += n.vx; n.y += n.vy; n.z += n.vz;
+                if (n.x < 0 || n.x > W) n.vx *= -1;
+                if (n.y < 0 || n.y > H * 0.55) n.vy *= -1;
+                if (n.z < 60 || n.z > 500) n.vz *= -1;
+            });
+            const projected = nodes.map(n => ({ ...project(n), node: n }));
+            for (let i = 0; i < projected.length; i++) {
+                for (let j = i + 1; j < projected.length; j++) {
+                    const a = projected[i], b = projected[j];
+                    const dx = a.sx - b.sx, dy = a.sy - b.sy;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < MAX_DIST) {
+                        const alpha = (1 - dist / MAX_DIST) * 0.14 * a.scale * b.scale * 3;
+                        ctx.beginPath();
+                        ctx.moveTo(a.sx, a.sy);
+                        ctx.lineTo(b.sx, b.sy);
+                        ctx.strokeStyle = `rgba(139,92,246,${alpha})`;
+                        ctx.lineWidth = 0.6;
+                        ctx.stroke();
+                    }
+                }
+            }
+            projected.forEach(({ sx, sy, scale }) => {
+                const r = 1.6 * scale * 2.2;
+                const alpha = 0.3 + scale * 0.55;
+                const grd = ctx.createRadialGradient(sx, sy, 0, sx, sy, r * 4);
+                grd.addColorStop(0, `rgba(139,92,246,${alpha * 0.35})`);
+                grd.addColorStop(1, 'rgba(139,92,246,0)');
+                ctx.beginPath();
+                ctx.arc(sx, sy, r * 4, 0, Math.PI * 2);
+                ctx.fillStyle = grd;
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(sx, sy, r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(196,181,253,${alpha})`;
+                ctx.fill();
+            });
+        }
+
+        // ------ Grid de perspectiva no "chão" (efeito synthwave) ------
+        function drawGrid() {
+            const horizon = H * 0.58;
+            const vp = { x: W / 2, y: horizon };
+            const COLS = 22, ROWS = 18;
+            const speed = (t * 0.6) % (H / ROWS);
+            ctx.save();
+            // linhas verticais convergindo no ponto de fuga
+            for (let i = 0; i <= COLS; i++) {
+                const xFrac = i / COLS;
+                ctx.beginPath();
+                ctx.moveTo(vp.x, vp.y);
+                ctx.lineTo(W * xFrac, H);
+                ctx.strokeStyle = `rgba(139,92,246,${0.05 + 0.05 * Math.sin(xFrac * Math.PI)})`;
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+            }
+            // linhas horizontais "se aproximando" (movimento pra frente)
+            for (let j = 0; j <= ROWS; j++) {
+                const yFrac = j / ROWS;
+                const perspective = Math.pow(yFrac, 2.6);
+                const y = horizon + (H - horizon) * perspective + speed;
+                if (y > H || y < horizon) continue;
+                const alpha = 0.03 + 0.09 * perspective;
+                const xLeft = vp.x - vp.x * perspective * 1.3;
+                const xRight = vp.x + (W - vp.x) * perspective * 1.3;
+                ctx.beginPath();
+                ctx.moveTo(xLeft, y);
+                ctx.lineTo(xRight, y);
+                ctx.strokeStyle = `rgba(139,92,246,${alpha})`;
+                ctx.lineWidth = 0.7 + perspective * 1.5;
+                ctx.stroke();
+            }
+            ctx.restore();
+
+            // brilho do horizonte
+            const hgrd = ctx.createLinearGradient(0, horizon - 40, 0, horizon + 40);
+            hgrd.addColorStop(0, 'rgba(139,92,246,0)');
+            hgrd.addColorStop(0.5, 'rgba(139,92,246,0.10)');
+            hgrd.addColorStop(1, 'rgba(139,92,246,0)');
+            ctx.fillStyle = hgrd;
+            ctx.fillRect(0, horizon - 40, W, 80);
+        }
+
+        function drawVignette() {
+            const vgrd = ctx.createRadialGradient(W / 2, H / 2, H * 0.28, W / 2, H / 2, H * 0.95);
+            vgrd.addColorStop(0, 'rgba(0,0,0,0)');
+            vgrd.addColorStop(1, 'rgba(2,0,10,0.62)');
+            ctx.fillStyle = vgrd;
+            ctx.fillRect(0, 0, W, H);
+        }
+
+        function draw() {
+            t++;
+            ctx.fillStyle = '#06060e';
+            ctx.fillRect(0, 0, W, H);
+            drawGrid();
+            drawNodes();
+            drawVignette();
+            requestAnimationFrame(draw);
+        }
+
+        window.addEventListener('resize', () => { resize(); createNodes(); });
+        resize();
+        createNodes();
+        draw();
+    })();
+    </script>
+</body>
+</html>
