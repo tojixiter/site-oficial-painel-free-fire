@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TTBVC5VQ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melhor Painel pra da full Capa no Free fire atualizado</title>
@@ -828,9 +835,6 @@ src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
         .pay-icon.master span:nth-child(1) { position: absolute; left: 6px; width: 14px; height: 14px; border-radius: 50%; background: #eb001b; }
         .pay-icon.master span:nth-child(2) { position: absolute; left: 12px; width: 14px; height: 14px; border-radius: 50%; background: #f79e1b; mix-blend-mode: screen; }
 
-        /* ====== WHATSAPP FLUTUANTE ====== */
-       
-
         /* ====== VER MAIS RECURSOS ====== */
         .features-extra { list-style: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
         .features-extra.aberto { max-height: 1200px; }
@@ -1167,6 +1171,10 @@ src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTBVC5VQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <canvas id="bg-canvas"></canvas>
 
     <div class="banner-roxo">
@@ -1254,7 +1262,7 @@ src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
 
             </div>
 
-            <a href="#pacotes" class="btn-comprar-verde btn-comprar-verde--solo">
+            <a href="#pacotes" onclick="abrirDeviceModal(event)" class="btn-comprar-verde btn-comprar-verde--solo">
                  QUERO MEU PAINEL XIT!
             </a>
             
@@ -1398,7 +1406,7 @@ src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
         <div class="packages-grid">
 
             <!-- ANDROID -->
-            <div class="package-card">
+            <div class="package-card" id="plano-android">
                 <div class="package-icon" style="background:#110f1e; border:3px solid var(--primary); box-shadow:0 0 24px rgba(139,92,246,0.4); clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%); overflow:hidden;">
                     <img src="img site toji/android.png" alt="Android" style="width:80%;height:80%;object-fit:contain;filter:drop-shadow(0 0 8px var(--primary));">
                 </div>
@@ -1664,6 +1672,86 @@ src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
         </div>
     </footer>
 
+    <!-- ====== MODAL SELETOR ANDROID / IPHONE ====== -->
+    <div id="deviceModalOverlay" class="device-modal-overlay" onclick="if(event.target===this) fecharDeviceModal()">
+        <div class="device-modal">
+            <p class="device-modal-title">Qual é o seu aparelho?</p>
+            <p class="device-modal-sub">Escolha pra ir direto pro seu plano</p>
+            <div class="device-modal-options">
+                <button class="device-opt" onclick="irParaPlano('android')">
+                    <img class="device-opt-icon" src="img site toji/android-icon.png" alt="Android">
+                    <span class="device-opt-label">Android</span>
+                </button>
+                <button class="device-opt" onclick="irParaPlano('iphone')">
+                    <img class="device-opt-icon" src="img site toji/iphone-icon.png" alt="iPhone">
+                    <span class="device-opt-label">iPhone / iOS</span>
+                </button>
+            </div>
+            <button class="device-modal-close" onclick="fecharDeviceModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <style>
+        .device-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(2,0,10,0.8);
+            backdrop-filter: blur(4px);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .device-modal-overlay.show { display: flex; animation: fadeInOverlay 0.25s ease; }
+        @keyframes fadeInOverlay { from { opacity: 0; } to { opacity: 1; } }
+        .device-modal {
+            background: var(--surface);
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            padding: 28px 24px;
+            max-width: 380px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 50px rgba(139,92,246,0.35), 0 25px 60px -12px rgba(0,0,0,0.7);
+            animation: popIn 0.3s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        @keyframes popIn { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .device-modal-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.03em;
+            color: white;
+            margin-bottom: 4px;
+        }
+        .device-modal-sub { color: var(--text-muted); font-size: 13.5px; font-weight: 600; margin-bottom: 22px; }
+        .device-modal-options { display: flex; gap: 14px; margin-bottom: 18px; }
+        .device-opt {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface2);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 12px;
+            cursor: pointer;
+            transition: border-color 0.2s, transform 0.15s, background 0.2s;
+        }
+        .device-opt:hover { border-color: var(--primary); background: rgba(139,92,246,0.1); transform: translateY(-2px); }
+        .device-opt:active { transform: scale(0.96); }
+        .device-opt-icon { width: 44px; height: 44px; object-fit: contain; }
+        .device-opt-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: 0.05em; color: white; }
+        .device-modal-close {
+            background: none; border: none;
+            color: var(--text-dim);
+            font-size: 13px; font-weight: 700;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+
     <!-- ====== SCRIPTS ====== -->
     <script>
         // Date
@@ -1680,6 +1768,31 @@ src="https://www.facebook.com/tr?id=4101840533281960&ev=PageView&noscript=1"
         }
         updateCountdown();
         setInterval(updateCountdown, 1000);
+
+        // ====== SELETOR DE APARELHO (Android / iPhone) NO BOTÃO DO TOPO ======
+        function abrirDeviceModal(e) {
+            if (e) e.preventDefault();
+            document.getElementById('deviceModalOverlay').classList.add('show');
+        }
+        function fecharDeviceModal() {
+            document.getElementById('deviceModalOverlay').classList.remove('show');
+        }
+        function irParaPlano(tipo) {
+            fecharDeviceModal();
+            const alvo = document.getElementById('plano-' + tipo);
+            if (!alvo) return;
+            setTimeout(() => {
+                alvo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                alvo.style.transition = 'box-shadow 0.3s, border-color 0.3s';
+                const corOriginal = alvo.style.borderColor;
+                alvo.style.boxShadow = '0 0 0 3px var(--primary), 0 0 40px rgba(139,92,246,0.6)';
+                setTimeout(() => { alvo.style.boxShadow = ''; }, 1800);
+            }, 150);
+        }
+        // Fecha o modal com a tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') fecharDeviceModal();
+        });
 
         // ====== PERSISTÊNCIA (localStorage) ======
         // Guarda o valor junto com o dia. Se o dia mudou, os contadores reiniciam (é "vendas HOJE"),
