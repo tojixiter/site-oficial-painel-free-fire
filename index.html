@@ -465,19 +465,6 @@ src="https://www.facebook.com/tr?id=1888526595449028&ev=PageView&noscript=1"
         }
         .packages-subtitle { color: var(--text-muted); text-align: center; margin-bottom: 48px; font-size: 1.125rem; }
 
-        /* ====== TABELA COMPARATIVA ====== */
-        .compare-table-wrap { max-width: 900px; margin: 0 auto 48px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-        .compare-table { width: 100%; min-width: 560px; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
-        .compare-table th, .compare-table td { padding: 12px 10px; text-align: center; font-size: 13px; border-bottom: 1px solid var(--border); }
-        .compare-table th { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.05em; background: var(--surface2); }
-        .compare-table td:first-child, .compare-table th:first-child { text-align: left; font-weight: 700; color: #d1d5db; padding-left: 16px; }
-        .compare-table th:nth-child(2) { color: var(--primary); }
-        .compare-table th:nth-child(3) { color: var(--primary); }
-        .compare-table th:nth-child(4) { color: var(--gold); }
-        .compare-table tr:last-child td { border-bottom: none; }
-        .compare-table .yes { color: #4ade80; font-size: 15px; }
-        .compare-table .no { color: var(--text-dim); font-size: 15px; }
-        .compare-table tbody tr:hover { background: rgba(139,92,246,0.05); }
         .packages-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 32px; }
 
         .package-card {
@@ -709,8 +696,6 @@ src="https://www.facebook.com/tr?id=1888526595449028&ev=PageView&noscript=1"
             justify-content: center;
             box-shadow: 0 25px 50px -12px rgba(139,92,246,0.5), 0 0 60px rgba(139,92,246,0.2);
         }
-        .guarantee-badge-number { font-family: 'Bebas Neue', sans-serif; font-size: 4.5rem; font-weight: 400; color: white; letter-spacing: 0.02em; }
-        .guarantee-badge-text { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.9); }
         .guarantee h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; font-weight: 400; letter-spacing: 0.06em; margin-bottom: 24px; }
         .guarantee p { font-size: 1.125rem; color: #d1d5db; margin-bottom: 32px; line-height: 1.7; max-width: 672px; margin-left: auto; margin-right: auto; }
         .guarantee-features { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; font-size: 14px; font-weight: 600; }
@@ -1100,9 +1085,7 @@ src="https://www.facebook.com/tr?id=1888526595449028&ev=PageView&noscript=1"
                     <span><strong>Eleito</strong> o melhor painel XIT do Brasil por <strong>3 anos consecutivos</strong></span>
                 </div>
             </div>
-        </div>
-    </section>
-    
+
     <div class="section-divider"></div>
     
     <!-- Packages -->
@@ -1588,11 +1571,9 @@ src="https://www.facebook.com/tr?id=1888526595449028&ev=PageView&noscript=1"
                 { name: "Painel CLT Premium", emoji: "👑", badge: "VIP", color: "#eab308" },
             ],
             cities: ["São Paulo, SP","Rio de Janeiro, RJ","Belo Horizonte, MG","Salvador, BA","Porto Alegre, RS","Curitiba, PR","Recife, PE","Fortaleza, CE","Manaus, AM","Belém, PA","Goiânia, GO","Florianópolis, SC","Campinas, SP","São Luís, MA","Maceió, AL","Natal, RN","Teresina, PI","Campo Grande, MS","João Pessoa, PB","Aracaju, SE","Macapá, AP","Porto Velho, RO","Palmas, TO","Vitória, ES","Ribeirão Preto, SP","Uberlândia, MG","Sorocaba, SP","Feira de Santana, BA","Joinville, SC","Londrina, PR","Niterói, RJ","Juiz de Fora, MG","Ananindeua, PA","Duque de Caxias, RJ","Contagem, MG","Santo André, SP"],
-            avatarColors: [["#7c3aed","#5b21b6"],["#eab308","#ca8a04"],["#3b82f6","#1d4ed8"],["#f97316","#c2410c"],["#a855f7","#7e22ce"],["#ec4899","#be185d"],["#06b6d4","#0e7490"],["#8b5cf6","#6d28d9"]],
             timeAgo: ["agora mesmo","há 1 min","há 2 min","há 3 min","há 4 min","há 5 min"]
         };
         function getRand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
-        function getInitials(f, l) { return (f[0] + l[0]).toUpperCase(); }
         function maskName(f, l) { return f + ' ' + l[0] + l.slice(1).replace(/[a-zA-ZÀ-ú]/g, '*'); }
         let ultimoNomeNotif = '';
         function showNotification() {
